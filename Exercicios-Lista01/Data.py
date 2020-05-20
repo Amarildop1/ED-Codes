@@ -30,18 +30,25 @@ class Data:
     def __str__(self):
         return f"{self.__dia}/{self.__mes}/{self.__ano}"
 
+
 # Programa Principal
 data1 = Data(1, 1, 2020)
-data2 = Data(19, 5, 2020)
+data2 = Data(21, 4, 2020)
 
 print(data1)
 print(data2)
 
-
-data1.set_dia(31)
-data1.set_mes(10)
+print("\n--- Alterei ---\n")
+# Alterando data1 com o método seter
+data1.set_dia(25)
+data1.set_mes(6)
 data1.set_ano(2021)
 
-
-print("\n--- Alterei ---\n")
 print(data1)
+
+# Alterando data2 com o método seter
+data2.set_dia(31)
+data2.set_mes(10)
+data2.set_ano(2022)
+
+print(data2)
