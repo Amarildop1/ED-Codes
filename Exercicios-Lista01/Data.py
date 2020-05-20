@@ -32,23 +32,25 @@ class Data:
 
 
 # Programa Principal
-data1 = Data(1, 1, 2020)
-data2 = Data(21, 4, 2020)
+hoje = Data(19, 5, 2020)
+print("Feito em:", hoje)
 
-print(data1)
+data1 = Data(1, 1, 2020)
+print("\n", data1)
+
+data2 = Data(21, 4, 2020)
 print(data2)
 
-print("\n--- Alterei ---\n")
+
+print("\n--- Alteradas ---\n")
 # Alterando data1 com o método seter
 data1.set_dia(25)
 data1.set_mes(6)
 data1.set_ano(2021)
-
 print(data1)
 
 # Alterando data2 com o método seter
 data2.set_dia(31)
 data2.set_mes(10)
 data2.set_ano(2022)
-
-print(data2)
+print(data2, "\n")
